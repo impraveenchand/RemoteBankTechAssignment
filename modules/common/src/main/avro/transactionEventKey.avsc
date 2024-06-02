@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "TransactionEventKey",
+  "namespace": "io.remotebank.transaction.event.key",
+  "fields": [
+    {
+      "name": "user_id",
+      "type": "int"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "TransactionAggregatedEventValue",
+  "namespace": "io.remotebank.transaction.aggregated.event.value",
+  "fields": [
+    {
+      "name": "user_id",
+      "type": "int"
+    },
+    {
+      "name": "total_transactions_count",
+      "type": "int"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="transactions-ml-features"
+		module="transactions-ml-features_2.12"
+		revision="1.0.0"
+		status="integration"
+		publication="20240603000850"
+	>
+		<description>
+		transactions-ml-features
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		<conf name="compile-internal" visibility="private" description="" extends="compile,optional,provided"/>
+		<conf name="runtime-internal" visibility="private" description="" extends="runtime,optional"/>
+		<conf name="test-internal" visibility="private" description="" extends="test,optional,provided"/>
+		<conf name="plugin" visibility="private" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+		<conf name="scala-tool" visibility="private" description=""/>
+		<conf name="avro" visibility="public" description=""/>
+	</configurations>
+	<publications>
+		<artifact name="transactions-ml-features_2.12" type="pom" ext="pom" conf="pom"/>
+		<artifact name="transactions-ml-features_2.12" type="jar" ext="jar" conf="compile"/>
+		<artifact name="transactions-ml-features_2.12" type="src" ext="jar" conf="compile" e:classifier="sources"/>
+		<artifact name="transactions-ml-features_2.12" type="doc" ext="jar" conf="compile" e:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.7" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.12.7" conf="scala-tool->default,optional(default)"/>
+		<dependency org="common" name="common_2.12" rev="0.1.0-SNAPSHOT" conf="compile->default(compile)"/>
+		<dependency org="org.apache.flink" name="flink-scala_2.12" rev="1.17.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.flink" name="flink-streaming-scala_2.12" rev="1.17.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.flink" name="flink-runtime-web" rev="1.17.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.flink" name="flink-table" rev="1.17.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.flink" name="flink-table-common" rev="1.17.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.flink" name="flink-table-planner_2.12" rev="1.17.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.flink" name="flink-table-api-java-bridge" rev="1.17.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.flink" name="flink-table-api-scala-bridge_2.12" rev="1.17.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.flink" name="flink-connector-kafka" rev="1.17.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.flink" name="flink-clients" rev="1.17.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.avro" name="avro" rev="1.11.3" conf="compile->default(compile)"/>
+		<dependency org="org.apache.flink" name="flink-connector-elasticsearch6" rev="3.0.1-1.17" conf="compile->default(compile)"/>
+		<dependency org="io.confluent" name="kafka-avro-serializer" rev="5.3.0" conf="compile->default(compile)">
+			<exclude org="io.confluent" module="kafka-schema-registry-client" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.apache.flink" name="flink-avro-confluent-registry" rev="1.17.0" conf="compile->default(compile)">
+			<exclude org="io.confluent" module="kafka-schema-registry-client" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.confluent" module="kafka-avro-serializer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.confluent" name="kafka-schema-registry-client" rev="5.3.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.logging.log4j" name="log4j-core" rev="2.23.1" conf="compile->default(compile)"/>
+	</dependencies>
+</ivy-module>

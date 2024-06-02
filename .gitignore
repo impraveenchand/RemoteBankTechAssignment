@@ -1,0 +1,18 @@
+# IntelliJ project files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Compiled files
+/target/
+
+# Scala SBT specific
+.project
+.cache
+
+# Logs and other generated files
+/logs/
+*.log
+*.log.*
+*.class

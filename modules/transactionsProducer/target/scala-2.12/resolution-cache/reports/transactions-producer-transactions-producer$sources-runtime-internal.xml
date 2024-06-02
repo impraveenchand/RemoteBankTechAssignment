@@ -1,0 +1,1403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="transactions-producer"
+		module="transactions-producer$sources"
+		revision="1.0.0"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, avro"
+		date="20240603003939"/>
+	<dependencies>
+		<module organisation="com.101tec" name="zkclient">
+			<revision name="0.10" status="release" pubdate="20161108220530" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sgroschupf/zkclient" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3885" time="0" location="C:\Users\impra\.ivy2\cache\com.101tec\zkclient\ivy-0.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/101tec/zkclient/0.10/zkclient-0.10.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="0.10" rev-constraint-default="0.10" rev-constraint-dynamic="0.10" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="zkclient" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="43713" time="0" location="C:\Users\impra\.ivy2\cache\com.101tec\zkclient\srcs\zkclient-0.10-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/101tec/zkclient/0.10/zkclient-0.10-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="common" name="common_2.12">
+			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20240603003922" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="37">
+				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="1.0.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.logging.log4j" name="log4j-core">
+			<revision name="2.23.1" status="release" pubdate="20240306180246" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="80">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="123357" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.logging.log4j\log4j-core\ivy-2.23.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.23.1/log4j-core-2.23.1.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="2.23.1" rev-constraint-default="2.23.1" rev-constraint-dynamic="2.23.1" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="log4j-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1343218" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.logging.log4j\log4j-core\srcs\log4j-core-2.23.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.23.1/log4j-core-2.23.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.logging.log4j" name="log4j-api">
+			<revision name="2.23.1" status="release" pubdate="20240306180245" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="84">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="118917" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.logging.log4j\log4j-api\ivy-2.23.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="2.23.1" rev-constraint-default="2.23.1" rev-constraint-dynamic="2.23.1" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="log4j-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="288505" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.logging.log4j\log4j-api\srcs\log4j-api-2.23.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-connector-elasticsearch6">
+			<revision name="3.0.1-1.17" status="release" pubdate="20230413144037" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="99">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="41037" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-connector-elasticsearch6\ivy-3.0.1-1.17.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-connector-elasticsearch6/3.0.1-1.17/flink-connector-elasticsearch6-3.0.1-1.17.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="3.0.1-1.17" rev-constraint-default="3.0.1-1.17" rev-constraint-dynamic="3.0.1-1.17" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-connector-elasticsearch6" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="30875" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-connector-elasticsearch6\srcs\flink-connector-elasticsearch6-3.0.1-1.17-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-connector-elasticsearch6/3.0.1-1.17/flink-connector-elasticsearch6-3.0.1-1.17-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.elasticsearch.client" name="elasticsearch-rest-high-level-client">
+			<revision name="6.8.20" status="release" pubdate="20211011225439" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/elastic/elasticsearch" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="106">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3649" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch.client\elasticsearch-rest-high-level-client\ivy-6.8.20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/elasticsearch/client/elasticsearch-rest-high-level-client/6.8.20/elasticsearch-rest-high-level-client-6.8.20.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="6.8.20" rev-constraint-default="6.8.20" rev-constraint-dynamic="6.8.20" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="elasticsearch-rest-high-level-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="671970" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch.client\elasticsearch-rest-high-level-client\srcs\elasticsearch-rest-high-level-client-6.8.20-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/elasticsearch/client/elasticsearch-rest-high-level-client/6.8.20/elasticsearch-rest-high-level-client-6.8.20-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.elasticsearch.plugin" name="lang-mustache-client">
+			<revision name="6.8.20" status="release" pubdate="20211011225456" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/elastic/elasticsearch" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="92">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2799" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch.plugin\lang-mustache-client\ivy-6.8.20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/elasticsearch/plugin/lang-mustache-client/6.8.20/lang-mustache-client-6.8.20.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="6.8.20" rev-constraint-default="6.8.20" rev-constraint-dynamic="6.8.20" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="lang-mustache-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="33470" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch.plugin\lang-mustache-client\srcs\lang-mustache-client-6.8.20-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/elasticsearch/plugin/lang-mustache-client/6.8.20/lang-mustache-client-6.8.20-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.spullara.mustache.java" name="compiler">
+			<revision name="0.9.3" status="release" pubdate="20160719232639" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/spullara/mustache.java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="98">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3521" time="0" location="C:\Users\impra\.ivy2\cache\com.github.spullara.mustache.java\compiler\ivy-0.9.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/spullara/mustache/java/compiler/0.9.3/compiler-0.9.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="0.9.3" rev-constraint-default="0.9.3" rev-constraint-dynamic="0.9.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="compiler" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="53817" time="0" location="C:\Users\impra\.ivy2\cache\com.github.spullara.mustache.java\compiler\srcs\compiler-0.9.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/spullara/mustache/java/compiler/0.9.3/compiler-0.9.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.elasticsearch.client" name="elasticsearch-rest-client">
+			<revision name="6.8.20" status="release" pubdate="20211011225437" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/elastic/elasticsearch" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4626" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch.client\elasticsearch-rest-client\ivy-6.8.20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/elasticsearch/client/elasticsearch-rest-client/6.8.20/elasticsearch-rest-client-6.8.20.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="6.8.20" rev-constraint-default="6.8.20" rev-constraint-dynamic="6.8.20" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="elasticsearch-rest-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="47928" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch.client\elasticsearch-rest-client\srcs\elasticsearch-rest-client-6.8.20-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/elasticsearch/client/elasticsearch-rest-client/6.8.20/elasticsearch-rest-client-6.8.20-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.10" status="release" pubdate="20141106194535" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="72">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="10706" time="0" location="C:\Users\impra\.ivy2\cache\commons-codec\commons-codec\ivy-1.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.10" rev-constraint-default="1.10" rev-constraint-dynamic="1.10" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="commons-codec" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="301032" time="0" location="C:\Users\impra\.ivy2\cache\commons-codec\commons-codec\srcs\commons-codec-1.10-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpasyncclient">
+			<revision name="4.1.2" status="release" pubdate="20160618182203" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-asyncclient" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="70">
+				<license name="Apache License, Version 2.0" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="9852" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.httpcomponents\httpasyncclient\ivy-4.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpasyncclient/4.1.2/httpasyncclient-4.1.2.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="4.1.2" rev-constraint-default="4.1.2" rev-constraint-dynamic="4.1.2" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="httpasyncclient" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="139450" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.httpcomponents\httpasyncclient\srcs\httpasyncclient-4.1.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpasyncclient/4.1.2/httpasyncclient-4.1.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpcore-nio">
+			<revision name="4.4.5" status="release" pubdate="20160608221051" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="75">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7851" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.httpcomponents\httpcore-nio\ivy-4.4.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore-nio/4.4.5/httpcore-nio-4.4.5.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="4.4.5" rev-constraint-default="4.4.5" rev-constraint-dynamic="4.4.5" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="httpcore-nio" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="358477" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.httpcomponents\httpcore-nio\srcs\httpcore-nio-4.4.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore-nio/4.4.5/httpcore-nio-4.4.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpcore">
+			<revision name="4.4.5" status="release" pubdate="20160608220939" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="97">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7774" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.httpcomponents\httpcore\ivy-4.4.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="4.4.5" rev-constraint-default="4.4.5" rev-constraint-dynamic="4.4.5" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="httpcore" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="403554" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.httpcomponents\httpcore\srcs\httpcore-4.4.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-connector-elasticsearch-base">
+			<revision name="3.0.1-1.17" status="release" pubdate="20230413144029" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="62">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="40768" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-connector-elasticsearch-base\ivy-3.0.1-1.17.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-connector-elasticsearch-base/3.0.1-1.17/flink-connector-elasticsearch-base-3.0.1-1.17.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="3.0.1-1.17" rev-constraint-default="3.0.1-1.17" rev-constraint-dynamic="3.0.1-1.17" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-connector-elasticsearch-base" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="85692" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-connector-elasticsearch-base\srcs\flink-connector-elasticsearch-base-3.0.1-1.17-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-connector-elasticsearch-base/3.0.1-1.17/flink-connector-elasticsearch-base-3.0.1-1.17-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-connector-kafka">
+			<revision name="1.17.0" status="release" pubdate="20230317152753" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="56">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="69461" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-connector-kafka\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-connector-kafka/1.17.0/flink-connector-kafka-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-connector-kafka" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="270568" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-connector-kafka\srcs\flink-connector-kafka-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-connector-kafka/1.17.0/flink-connector-kafka-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-avro-confluent-registry">
+			<revision name="1.17.0" status="release" pubdate="20230317152731" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="44">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="69231" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-avro-confluent-registry\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-avro-confluent-registry/1.17.0/flink-avro-confluent-registry-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-avro-confluent-registry" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="26704" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-avro-confluent-registry\srcs\flink-avro-confluent-registry-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-avro-confluent-registry/1.17.0/flink-avro-confluent-registry-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-avro">
+			<revision name="1.17.0" status="release" pubdate="20230317152422" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="71300" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-avro\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-avro/1.17.0/flink-avro-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-avro" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="80238" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-avro\srcs\flink-avro-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-avro/1.17.0/flink-avro-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.kafka" name="kafka-clients">
+			<revision name="3.2.3" status="release" pubdate="20220913141601" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://kafka.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="110">
+				<license name="The Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3056" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.kafka\kafka-clients\ivy-3.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/3.2.3/kafka-clients-3.2.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="3.2.3" rev-constraint-default="3.2.3" rev-constraint-dynamic="3.2.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="kafka-clients" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2766826" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.kafka\kafka-clients\srcs\kafka-clients-3.2.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/3.2.3/kafka-clients-3.2.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.xerial.snappy" name="snappy-java">
+			<revision name="1.1.8.4" status="release" pubdate="20210125205617" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/xerial/snappy-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3960" time="0" location="C:\Users\impra\.ivy2\cache\org.xerial.snappy\snappy-java\ivy-1.1.8.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.8.4/snappy-java-1.1.8.4.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.1.8.4" rev-constraint-default="1.1.8.4" rev-constraint-dynamic="1.1.8.4" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="snappy-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1962098" time="0" location="C:\Users\impra\.ivy2\cache\org.xerial.snappy\snappy-java\srcs\snappy-java-1.1.8.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.8.4/snappy-java-1.1.8.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.luben" name="zstd-jni">
+			<revision name="1.5.2-1" status="release" pubdate="20220122170755" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/luben/zstd-jni" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="111">
+				<license name="BSD 2-Clause License" url="https://opensource.org/licenses/BSD-2-Clause"/>
+				<metadata-artifact status="no" details="" size="2908" time="0" location="C:\Users\impra\.ivy2\cache\com.github.luben\zstd-jni\ivy-1.5.2-1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/luben/zstd-jni/1.5.2-1/zstd-jni-1.5.2-1.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.5.2-1" rev-constraint-default="1.5.2-1" rev-constraint-dynamic="1.5.2-1" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="zstd-jni" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="28172" time="0" location="C:\Users\impra\.ivy2\cache\com.github.luben\zstd-jni\srcs\zstd-jni-1.5.2-1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/luben/zstd-jni/1.5.2-1/zstd-jni-1.5.2-1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-runtime-web">
+			<revision name="1.17.0" status="release" pubdate="20230317153720" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="112">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="61364" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-runtime-web\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-runtime-web/1.17.0/flink-runtime-web-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-runtime-web" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4042852" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-runtime-web\srcs\flink-runtime-web-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-runtime-web/1.17.0/flink-runtime-web-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-connector-base">
+			<revision name="1.17.0" status="release" pubdate="20230317151733" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="63553" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-connector-base\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-connector-base/1.17.0/flink-connector-base-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-connector-base" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="106436" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-connector-base\srcs\flink-connector-base-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-connector-base/1.17.0/flink-connector-base-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.elasticsearch.plugin" name="rank-eval-client">
+			<revision name="6.8.20" status="release" pubdate="20211011225453" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/elastic/elasticsearch" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2606" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch.plugin\rank-eval-client\ivy-6.8.20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/elasticsearch/plugin/rank-eval-client/6.8.20/rank-eval-client-6.8.20.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="6.8.20" rev-constraint-default="6.8.20" rev-constraint-dynamic="6.8.20" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="rank-eval-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="45143" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch.plugin\rank-eval-client\srcs\rank-eval-client-6.8.20-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/elasticsearch/plugin/rank-eval-client/6.8.20/rank-eval-client-6.8.20-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.zookeeper" name="zookeeper">
+			<revision name="3.4.14" status="release" pubdate="20190307001949" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="13622" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.zookeeper\zookeeper\ivy-3.4.14.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/zookeeper/zookeeper/3.4.14/zookeeper-3.4.14.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="3.4.14" rev-constraint-default="3.4.14" rev-constraint-dynamic="3.4.14" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="zookeeper" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="611337" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.zookeeper\zookeeper\srcs\zookeeper-3.4.14-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/zookeeper/zookeeper/3.4.14/zookeeper-3.4.14-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty">
+			<revision name="3.10.6.Final" status="release" pubdate="20160629181528" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="7263" time="0" location="C:\Users\impra\.ivy2\cache\io.netty\netty\ivy-3.10.6.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty/3.10.6.Final/netty-3.10.6.Final.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="3.10.6.Final" rev-constraint-default="3.10.6.Final" rev-constraint-dynamic="3.10.6.Final" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="netty" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1132389" time="0" location="C:\Users\impra\.ivy2\cache\io.netty\netty\srcs\netty-3.10.6.Final-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty/3.10.6.Final/netty-3.10.6.Final-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.yetus" name="audience-annotations">
+			<revision name="0.5.0" status="release" pubdate="20170713021838" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4857" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.yetus\audience-annotations\ivy-0.5.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/yetus/audience-annotations/0.5.0/audience-annotations-0.5.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="0.5.0" rev-constraint-default="0.5.0" rev-constraint-dynamic="0.5.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="audience-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="14325" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.yetus\audience-annotations\srcs\audience-annotations-0.5.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/yetus/audience-annotations/0.5.0/audience-annotations-0.5.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="jline" name="jline">
+			<revision name="0.9.94" status="release" pubdate="20080223012343" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jline.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="53">
+				<license name="BSD" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3002" time="0" location="C:\Users\impra\.ivy2\cache\jline\jline\ivy-0.9.94.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/jline/jline/0.9.94/jline-0.9.94.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="0.9.94" rev-constraint-default="0.9.94" rev-constraint-dynamic="0.9.94" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="jline" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="76456" time="0" location="C:\Users\impra\.ivy2\cache\jline\jline\srcs\jline-0.9.94-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/jline/jline/0.9.94/jline-0.9.94-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.elasticsearch.plugin" name="aggs-matrix-stats-client">
+			<revision name="6.8.20" status="release" pubdate="20211011225455" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/elastic/elasticsearch" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2651" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch.plugin\aggs-matrix-stats-client\ivy-6.8.20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/elasticsearch/plugin/aggs-matrix-stats-client/6.8.20/aggs-matrix-stats-client-6.8.20.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="6.8.20" rev-constraint-default="6.8.20" rev-constraint-dynamic="6.8.20" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="aggs-matrix-stats-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="36273" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch.plugin\aggs-matrix-stats-client\srcs\aggs-matrix-stats-client-6.8.20-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/elasticsearch/plugin/aggs-matrix-stats-client/6.8.20/aggs-matrix-stats-client-6.8.20-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-table-planner_2.12">
+			<revision name="1.17.0" status="release" pubdate="20230317152147" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="18">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="65737" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-table-planner_2.12\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-table-planner_2.12/1.17.0/flink-table-planner_2.12-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-table-planner_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2636173" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-table-planner_2.12\srcs\flink-table-planner_2.12-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-table-planner_2.12/1.17.0/flink-table-planner_2.12-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-table-api-scala-bridge_2.12">
+			<revision name="1.17.0" status="release" pubdate="20230317151653" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="52">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="63109" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-table-api-scala-bridge_2.12\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-table-api-scala-bridge_2.12/1.17.0/flink-table-api-scala-bridge_2.12-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-table-api-scala-bridge_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="27720" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-table-api-scala-bridge_2.12\srcs\flink-table-api-scala-bridge_2.12-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-table-api-scala-bridge_2.12/1.17.0/flink-table-api-scala-bridge_2.12-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-streaming-scala_2.12">
+			<revision name="1.17.0" status="release" pubdate="20230317151628" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="107">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="58098" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-streaming-scala_2.12\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-streaming-scala_2.12/1.17.0/flink-streaming-scala_2.12-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-streaming-scala_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="100819" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-streaming-scala_2.12\srcs\flink-streaming-scala_2.12-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-streaming-scala_2.12/1.17.0/flink-streaming-scala_2.12-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-table-api-scala_2.12">
+			<revision name="1.17.0" status="release" pubdate="20230317151547" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="79">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="63182" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-table-api-scala_2.12\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-table-api-scala_2.12/1.17.0/flink-table-api-scala_2.12-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-table-api-scala_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="20266" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-table-api-scala_2.12\srcs\flink-table-api-scala_2.12-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-table-api-scala_2.12/1.17.0/flink-table-api-scala_2.12-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-table-runtime">
+			<revision name="1.17.0" status="release" pubdate="20230317151344" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="63618" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-table-runtime\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-table-runtime/1.17.0/flink-table-runtime-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-table-runtime" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="949984" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-table-runtime\srcs\flink-table-runtime-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-table-runtime/1.17.0/flink-table-runtime-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-cep">
+			<revision name="1.17.0" status="release" pubdate="20230317151311" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="63096" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-cep\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-cep/1.17.0/flink-cep-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-cep" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="139428" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-cep\srcs\flink-cep-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-cep/1.17.0/flink-cep-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apiguardian" name="apiguardian-api">
+			<revision name="1.1.2" status="release" pubdate="20210627182335" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/apiguardian-team/apiguardian" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="103">
+				<license name="The Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2546" time="0" location="C:\Users\impra\.ivy2\cache\org.apiguardian\apiguardian-api\ivy-1.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.1.2" rev-constraint-default="1.1.2" rev-constraint-dynamic="1.1.2" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="apiguardian-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="6636" time="0" location="C:\Users\impra\.ivy2\cache\org.apiguardian\apiguardian-api\srcs\apiguardian-api-1.1.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-scala_2.12">
+			<revision name="1.17.0" status="release" pubdate="20230317151444" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="73">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="57471" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-scala_2.12\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-scala_2.12/1.17.0/flink-scala_2.12-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-scala_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="144486" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-scala_2.12\srcs\flink-scala_2.12-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-scala_2.12/1.17.0/flink-scala_2.12-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="chill_2.12">
+			<revision name="0.7.6" status="release" pubdate="20170114062906" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/chill" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3209" time="0" location="C:\Users\impra\.ivy2\cache\com.twitter\chill_2.12\ivy-0.7.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/chill_2.12/0.7.6/chill_2.12-0.7.6.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="0.7.6" rev-constraint-default="0.7.6" rev-constraint-dynamic="0.7.6" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="chill_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="35177" time="0" location="C:\Users\impra\.ivy2\cache\com.twitter\chill_2.12\srcs\chill_2.12-0.7.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/chill_2.12/0.7.6/chill_2.12-0.7.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-table-api-java-bridge">
+			<revision name="1.17.0" status="release" pubdate="20230317151032" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="115">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="63397" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-table-api-java-bridge\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-table-api-java-bridge/1.17.0/flink-table-api-java-bridge-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-table-api-java-bridge" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="91937" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-table-api-java-bridge\srcs\flink-table-api-java-bridge-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-table-api-java-bridge/1.17.0/flink-table-api-java-bridge-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-table-api-bridge-base">
+			<revision name="1.17.0" status="release" pubdate="20230317151018" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="88">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="61978" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-table-api-bridge-base\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-table-api-bridge-base/1.17.0/flink-table-api-bridge-base-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-table-api-bridge-base" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="16790" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-table-api-bridge-base\srcs\flink-table-api-bridge-base-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-table-api-bridge-base/1.17.0/flink-table-api-bridge-base-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-table-api-java">
+			<revision name="1.17.0" status="release" pubdate="20230317150459" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="49">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="62438" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-table-api-java\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-table-api-java/1.17.0/flink-table-api-java-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-table-api-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="433396" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-table-api-java\srcs\flink-table-api-java-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-table-api-java/1.17.0/flink-table-api-java-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-table-common">
+			<revision name="1.17.0" status="release" pubdate="20230317150439" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="60">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="62643" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-table-common\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-table-common/1.17.0/flink-table-common-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-table-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="882802" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-table-common\srcs\flink-table-common-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-table-common/1.17.0/flink-table-common-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.immutables" name="value-annotations">
+			<revision name="2.8.8" status="release" pubdate="20200509050731" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5820" time="0" location="C:\Users\impra\.ivy2\cache\org.immutables\value-annotations\ivy-2.8.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/immutables/value-annotations/2.8.8/value-annotations-2.8.8.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="2.8.8" rev-constraint-default="2.8.8" rev-constraint-dynamic="2.8.8" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="value-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="21839" time="0" location="C:\Users\impra\.ivy2\cache\org.immutables\value-annotations\srcs\value-annotations-2.8.8-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/immutables/value-annotations/2.8.8/value-annotations-2.8.8-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.spotbugs" name="spotbugs-annotations">
+			<revision name="3.1.9" status="release" pubdate="20181123074758" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://spotbugs.github.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1" url="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html"/>
+				<metadata-artifact status="no" details="" size="2777" time="0" location="C:\Users\impra\.ivy2\cache\com.github.spotbugs\spotbugs-annotations\ivy-3.1.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/spotbugs/spotbugs-annotations/3.1.9/spotbugs-annotations-3.1.9.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="3.1.9" rev-constraint-default="3.1.9" rev-constraint-dynamic="3.1.9" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="spotbugs-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="24185" time="0" location="C:\Users\impra\.ivy2\cache\com.github.spotbugs\spotbugs-annotations\srcs\spotbugs-annotations-3.1.9-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/spotbugs/spotbugs-annotations/3.1.9/spotbugs-annotations-3.1.9-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-compiler">
+			<revision name="2.12.7" status="release" pubdate="20180927140727" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="3125" time="0" location="C:\Users\impra\.ivy2\cache\org.scala-lang\scala-compiler\ivy-2.12.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.7/scala-compiler-2.12.7.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="scala-compiler" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1845974" time="0" location="C:\Users\impra\.ivy2\cache\org.scala-lang\scala-compiler\srcs\scala-compiler-2.12.7-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.7/scala-compiler-2.12.7-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.12">
+			<revision name="1.0.6" status="release" pubdate="20161101195105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3175" time="0" location="C:\Users\impra\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\ivy-1.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="scala-xml_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="109199" time="0" location="C:\Users\impra\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\srcs\scala-xml_2.12-1.0.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.12.7" status="release" pubdate="20180927140203" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.7/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="83">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2860" time="0" location="C:\Users\impra\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.12.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.7/scala-reflect-2.12.7.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.0.0" extra-info.apiURL="http://www.scala-lang.org/api/2.12.7/"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="590262" time="0" location="C:\Users\impra\.ivy2\cache\org.scala-lang\scala-reflect\srcs\scala-reflect-2.12.7-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.7/scala-reflect-2.12.7-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.7" status="release" pubdate="20180927140542" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.7/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="87">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2685" time="0" location="C:\Users\impra\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.7/scala-library-2.12.7.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.0.0" extra-info.apiURL="http://www.scala-lang.org/api/2.12.7/"/>
+				<artifacts>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="991412" time="0" location="C:\Users\impra\.ivy2\cache\org.scala-lang\scala-library\srcs\scala-library-2.12.7-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.7/scala-library-2.12.7-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-clients">
+			<revision name="1.17.0" status="release" pubdate="20230317151125" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="14">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="56490" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-clients\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-clients/1.17.0/flink-clients-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-clients" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="164028" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-clients\srcs\flink-clients-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-clients/1.17.0/flink-clients-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-streaming-java">
+			<revision name="1.17.0" status="release" pubdate="20230317151004" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="56493" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-streaming-java\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-streaming-java/1.17.0/flink-streaming-java-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-streaming-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1137333" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-streaming-java\srcs\flink-streaming-java-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-streaming-java/1.17.0/flink-streaming-java-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-file-sink-common">
+			<revision name="1.17.0" status="release" pubdate="20230317150540" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="86">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="61304" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-file-sink-common\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-file-sink-common/1.17.0/flink-file-sink-common-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-file-sink-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="39916" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-file-sink-common\srcs\flink-file-sink-common-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-file-sink-common/1.17.0/flink-file-sink-common-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-optimizer">
+			<revision name="1.17.0" status="release" pubdate="20230317151106" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="81">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="56151" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-optimizer\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-optimizer/1.17.0/flink-optimizer-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-optimizer" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="283268" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-optimizer\srcs\flink-optimizer-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-optimizer/1.17.0/flink-optimizer-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-runtime">
+			<revision name="1.17.0" status="release" pubdate="20230317150919" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="61012" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-runtime\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-runtime/1.17.0/flink-runtime-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-runtime" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4129250" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-runtime\srcs\flink-runtime-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-runtime/1.17.0/flink-runtime-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.lz4" name="lz4-java">
+			<revision name="1.8.0" status="release" pubdate="20210619120134" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lz4/lz4-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="77">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2769" time="0" location="C:\Users\impra\.ivy2\cache\org.lz4\lz4-java\ivy-1.8.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.8.0" rev-constraint-default="1.8.0" rev-constraint-dynamic="1.8.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="lz4-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="67663" time="0" location="C:\Users\impra\.ivy2\cache\org.lz4\lz4-java\srcs\lz4-java-1.8.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.javassist" name="javassist">
+			<revision name="3.24.0-GA" status="release" pubdate="20181101224800" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
+				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="3453" time="0" location="C:\Users\impra\.ivy2\cache\org.javassist\javassist\ivy-3.24.0-GA.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="3.24.0-GA" rev-constraint-default="3.24.0-GA" rev-constraint-dynamic="3.24.0-GA" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="javassist" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="545226" time="0" location="C:\Users\impra\.ivy2\cache\org.javassist\javassist\srcs\javassist-3.24.0-GA-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-cli" name="commons-cli">
+			<revision name="1.5.0" status="release" pubdate="20211024031803" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://commons.apache.org/proper/commons-cli/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="89">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="16846" time="0" location="C:\Users\impra\.ivy2\cache\commons-cli\commons-cli\ivy-1.5.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-cli/commons-cli/1.5.0/commons-cli-1.5.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.5.0" rev-constraint-default="1.5.0" rev-constraint-dynamic="1.5.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="commons-cli" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="63124" time="0" location="C:\Users\impra\.ivy2\cache\commons-cli\commons-cli\srcs\commons-cli-1.5.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-cli/commons-cli/1.5.0/commons-cli-1.5.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-queryable-state-client-java">
+			<revision name="1.17.0" status="release" pubdate="20230317150701" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="61801" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-queryable-state-client-java\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-queryable-state-client-java/1.17.0/flink-queryable-state-client-java-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-queryable-state-client-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="66220" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-queryable-state-client-java\srcs\flink-queryable-state-client-java-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-queryable-state-client-java/1.17.0/flink-queryable-state-client-java-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-java">
+			<revision name="1.17.0" status="release" pubdate="20230317150521" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="55700" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-java\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-java/1.17.0/flink-java-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="305214" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-java\srcs\flink-java-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-java/1.17.0/flink-java-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="chill-java">
+			<revision name="0.7.6" status="release" pubdate="20170114062933" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/chill" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="82">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2925" time="0" location="C:\Users\impra\.ivy2\cache\com.twitter\chill-java\ivy-0.7.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/chill-java/0.7.6/chill-java-0.7.6.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="0.7.6" rev-constraint-default="0.7.6" rev-constraint-dynamic="0.7.6" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="chill-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="60121" time="0" location="C:\Users\impra\.ivy2\cache\com.twitter\chill-java\srcs\chill-java-0.7.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/chill-java/0.7.6/chill-java-0.7.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-math3">
+			<revision name="3.6.1" status="release" pubdate="20160317230511" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-math/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="58">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="12021" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.commons\commons-math3\ivy-3.6.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="3.6.1" rev-constraint-default="3.6.1" rev-constraint-dynamic="3.6.1" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="commons-math3" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2514690" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.commons\commons-math3\srcs\commons-math3-3.6.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-rpc-akka-loader">
+			<revision name="1.17.0" status="release" pubdate="20230317150644" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="61628" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-rpc-akka-loader\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-rpc-akka-loader/1.17.0/flink-rpc-akka-loader-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-rpc-akka-loader" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="12526" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-rpc-akka-loader\srcs\flink-rpc-akka-loader-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-rpc-akka-loader/1.17.0/flink-rpc-akka-loader-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-rpc-core">
+			<revision name="1.17.0" status="release" pubdate="20230317150556" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="55">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="61063" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-rpc-core\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-rpc-core/1.17.0/flink-rpc-core-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-rpc-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="55846" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-rpc-core\srcs\flink-rpc-core-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-rpc-core/1.17.0/flink-rpc-core-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.ibm.icu" name="icu4j">
+			<revision name="67.1" status="release" pubdate="20200423042055" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://icu-project.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="Unicode/ICU License" url="https://raw.githubusercontent.com/unicode-org/icu/master/icu4c/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2634" time="0" location="C:\Users\impra\.ivy2\cache\com.ibm.icu\icu4j\ivy-67.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/ibm/icu/icu4j/67.1/icu4j-67.1.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="67.1" rev-constraint-default="67.1" rev-constraint-dynamic="67.1" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="icu4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2402373" time="0" location="C:\Users\impra\.ivy2\cache\com.ibm.icu\icu4j\srcs\icu4j-67.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/ibm/icu/icu4j/67.1/icu4j-67.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.elasticsearch.plugin" name="parent-join-client">
+			<revision name="6.8.20" status="release" pubdate="20211011225454" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/elastic/elasticsearch" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2617" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch.plugin\parent-join-client\ivy-6.8.20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/elasticsearch/plugin/parent-join-client/6.8.20/parent-join-client-6.8.20.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="6.8.20" rev-constraint-default="6.8.20" rev-constraint-dynamic="6.8.20" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="parent-join-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="51146" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch.plugin\parent-join-client\srcs\parent-join-client-6.8.20-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/elasticsearch/plugin/parent-join-client/6.8.20/parent-join-client-6.8.20-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.1.3" status="release" pubdate="20130517013523" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-logging/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="10440" time="0" location="C:\Users\impra\.ivy2\cache\commons-logging\commons-logging\ivy-1.1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="commons-logging" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="73915" time="0" location="C:\Users\impra\.ivy2\cache\commons-logging\commons-logging\srcs\commons-logging-1.1.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.immutables" name="value">
+			<revision name="2.8.8" status="release" pubdate="20200509050814" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5752" time="0" location="C:\Users\impra\.ivy2\cache\org.immutables\value\ivy-2.8.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/immutables/value/2.8.8/value-2.8.8.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="2.8.8" rev-constraint-default="2.8.8" rev-constraint-dynamic="2.8.8" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="value" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="617214" time="0" location="C:\Users\impra\.ivy2\cache\org.immutables\value\srcs\value-2.8.8-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/immutables/value/2.8.8/value-2.8.8-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.avro" name="avro">
+			<revision name="1.11.3" status="release" pubdate="20230917135247" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://avro.apache.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="7">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="27150" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.avro\avro\ivy-1.11.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/avro/1.11.3/avro-1.11.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.11.3" rev-constraint-default="1.11.3" rev-constraint-dynamic="1.11.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="avro" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="369538" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.avro\avro\srcs\avro-1.11.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/avro/1.11.3/avro-1.11.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-compress">
+			<revision name="1.22" status="release" pubdate="20221026011705" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://commons.apache.org/proper/commons-compress/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="46">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="24630" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.commons\commons-compress\ivy-1.22.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.22/commons-compress-1.22.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.22" rev-constraint-default="1.22" rev-constraint-dynamic="1.22" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="commons-compress" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="888919" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.commons\commons-compress\srcs\commons-compress-1.22-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.22/commons-compress-1.22-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.14.2" status="release" pubdate="20230129070152" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="96">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="29720" time="0" location="C:\Users\impra\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\ivy-2.14.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="2.14.2" rev-constraint-default="2.14.2" rev-constraint-dynamic="2.14.2" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1187493" time="0" location="C:\Users\impra\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\srcs\jackson-databind-2.14.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.14.2" status="release" pubdate="20230129052129" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="101">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8442" time="0" location="C:\Users\impra\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\ivy-2.14.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="2.14.2" rev-constraint-default="2.14.2" rev-constraint-dynamic="2.14.2" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="80923" time="0" location="C:\Users\impra\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\srcs\jackson-annotations-2.14.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.14.2" status="release" pubdate="20230129062447" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="28802" time="0" location="C:\Users\impra\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.14.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="2.14.2" rev-constraint-default="2.14.2" rev-constraint-dynamic="2.14.2" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="495039" time="0" location="C:\Users\impra\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\srcs\jackson-core-2.14.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.elasticsearch" name="elasticsearch">
+			<revision name="6.8.20" status="release" pubdate="20211011225431" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/elastic/elasticsearch" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="10327" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch\elasticsearch\ivy-6.8.20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/elasticsearch/elasticsearch/6.8.20/elasticsearch-6.8.20.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="6.8.20" rev-constraint-default="6.8.20" rev-constraint-dynamic="6.8.20" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="elasticsearch" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="6143328" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch\elasticsearch\srcs\elasticsearch-6.8.20-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/elasticsearch/elasticsearch/6.8.20/elasticsearch-6.8.20-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.elasticsearch" name="jna">
+			<revision name="5.5.0" status="release" pubdate="20200616072232" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/java-native-access/jna" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="85">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2571" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch\jna\ivy-5.5.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/elasticsearch/jna/5.5.0/jna-5.5.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="5.5.0" rev-constraint-default="5.5.0" rev-constraint-dynamic="5.5.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="jna" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="156301" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch\jna\srcs\jna-5.5.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/elasticsearch/jna/5.5.0/jna-5.5.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hdrhistogram" name="HdrHistogram">
+			<revision name="2.1.9" status="release" pubdate="20160518200331" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hdrhistogram.github.io/HdrHistogram/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="114">
+				<license name="Public Domain, per Creative Commons CC0" url="http://creativecommons.org/publicdomain/zero/1.0/"/>
+				<metadata-artifact status="no" details="" size="4228" time="0" location="C:\Users\impra\.ivy2\cache\org.hdrhistogram\HdrHistogram\ivy-2.1.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="2.1.9" rev-constraint-default="2.1.9" rev-constraint-dynamic="2.1.9" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="HdrHistogram" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="111315" time="0" location="C:\Users\impra\.ivy2\cache\org.hdrhistogram\HdrHistogram\srcs\HdrHistogram-2.1.9-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.tdunning" name="t-digest">
+			<revision name="3.2" status="release" pubdate="20170807055411" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/tdunning/t-digest" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="95">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4005" time="0" location="C:\Users\impra\.ivy2\cache\com.tdunning\t-digest\ivy-3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/tdunning/t-digest/3.2/t-digest-3.2.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="3.2" rev-constraint-default="3.2" rev-constraint-dynamic="3.2" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="t-digest" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="37839" time="0" location="C:\Users\impra\.ivy2\cache\com.tdunning\t-digest\srcs\t-digest-3.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/tdunning/t-digest/3.2/t-digest-3.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.10.10" status="release" pubdate="20210206025143" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6978" time="0" location="C:\Users\impra\.ivy2\cache\joda-time\joda-time\ivy-2.10.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.10.10/joda-time-2.10.10.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="2.10.10" rev-constraint-default="2.10.10" rev-constraint-dynamic="2.10.10" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="835257" time="0" location="C:\Users\impra\.ivy2\cache\joda-time\joda-time\srcs\joda-time-2.10.10-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.10.10/joda-time-2.10.10-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.carrotsearch" name="hppc">
+			<revision name="0.7.1" status="release" pubdate="20150507130334" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="76">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7180" time="0" location="C:\Users\impra\.ivy2\cache\com.carrotsearch\hppc\ivy-0.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.1/hppc-0.7.1.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="0.7.1" rev-constraint-default="0.7.1" rev-constraint-dynamic="0.7.1" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="hppc" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="738368" time="0" location="C:\Users\impra\.ivy2\cache\com.carrotsearch\hppc\srcs\hppc-0.7.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.1/hppc-0.7.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.elasticsearch" name="elasticsearch-cli">
+			<revision name="6.8.20" status="release" pubdate="20211011225433" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/elastic/elasticsearch" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2916" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch\elasticsearch-cli\ivy-6.8.20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/elasticsearch/elasticsearch-cli/6.8.20/elasticsearch-cli-6.8.20.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="6.8.20" rev-constraint-default="6.8.20" rev-constraint-dynamic="6.8.20" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="elasticsearch-cli" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="13774" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch\elasticsearch-cli\srcs\elasticsearch-cli-6.8.20-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/elasticsearch/elasticsearch-cli/6.8.20/elasticsearch-cli-6.8.20-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf.jopt-simple" name="jopt-simple">
+			<revision name="5.0.2" status="release" pubdate="20160608234008" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://pholser.github.io/jopt-simple" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
+				<license name="The MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="4302" time="0" location="C:\Users\impra\.ivy2\cache\net.sf.jopt-simple\jopt-simple\ivy-5.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/jopt-simple/jopt-simple/5.0.2/jopt-simple-5.0.2.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="5.0.2" rev-constraint-default="5.0.2" rev-constraint-dynamic="5.0.2" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="jopt-simple" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="85461" time="0" location="C:\Users\impra\.ivy2\cache\net.sf.jopt-simple\jopt-simple\srcs\jopt-simple-5.0.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/jopt-simple/jopt-simple/5.0.2/jopt-simple-5.0.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-suggest">
+			<revision name="7.7.3" status="release" pubdate="20200424180107" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="65">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="429069" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-suggest\ivy-7.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-suggest/7.7.3/lucene-suggest-7.7.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="7.7.3" rev-constraint-default="7.7.3" rev-constraint-dynamic="7.7.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="lucene-suggest" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="200804" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-suggest\srcs\lucene-suggest-7.7.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-suggest/7.7.3/lucene-suggest-7.7.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-spatial-extras">
+			<revision name="7.7.3" status="release" pubdate="20200424175509" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="430087" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-spatial-extras\ivy-7.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-spatial-extras/7.7.3/lucene-spatial-extras-7.7.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="7.7.3" rev-constraint-default="7.7.3" rev-constraint-dynamic="7.7.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="lucene-spatial-extras" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="175540" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-spatial-extras\srcs\lucene-spatial-extras-7.7.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-spatial-extras/7.7.3/lucene-spatial-extras-7.7.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-spatial3d">
+			<revision name="7.7.3" status="release" pubdate="20200424175607" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="71">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="428875" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-spatial3d\ivy-7.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-spatial3d/7.7.3/lucene-spatial3d-7.7.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="7.7.3" rev-constraint-default="7.7.3" rev-constraint-dynamic="7.7.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="lucene-spatial3d" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="271033" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-spatial3d\srcs\lucene-spatial3d-7.7.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-spatial3d/7.7.3/lucene-spatial3d-7.7.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-spatial">
+			<revision name="7.7.3" status="release" pubdate="20200424180557" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="113">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="428858" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-spatial\ivy-7.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-spatial/7.7.3/lucene-spatial-7.7.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="7.7.3" rev-constraint-default="7.7.3" rev-constraint-dynamic="7.7.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="lucene-spatial" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="16952" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-spatial\srcs\lucene-spatial-7.7.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-spatial/7.7.3/lucene-spatial-7.7.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-misc">
+			<revision name="7.7.3" status="release" pubdate="20200424180128" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="428784" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-misc\ivy-7.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-misc/7.7.3/lucene-misc-7.7.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="7.7.3" rev-constraint-default="7.7.3" rev-constraint-dynamic="7.7.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="lucene-misc" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="82380" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-misc\srcs\lucene-misc-7.7.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-misc/7.7.3/lucene-misc-7.7.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-highlighter">
+			<revision name="7.7.3" status="release" pubdate="20200424175838" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="429933" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-highlighter\ivy-7.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-highlighter/7.7.3/lucene-highlighter-7.7.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="7.7.3" rev-constraint-default="7.7.3" rev-constraint-dynamic="7.7.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="lucene-highlighter" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="163765" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-highlighter\srcs\lucene-highlighter-7.7.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-highlighter/7.7.3/lucene-highlighter-7.7.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-memory">
+			<revision name="7.7.3" status="release" pubdate="20200424180532" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="59">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="429306" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-memory\ivy-7.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-memory/7.7.3/lucene-memory-7.7.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="7.7.3" rev-constraint-default="7.7.3" rev-constraint-dynamic="7.7.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="lucene-memory" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="26938" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-memory\srcs\lucene-memory-7.7.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-memory/7.7.3/lucene-memory-7.7.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-queryparser">
+			<revision name="7.7.3" status="release" pubdate="20200424180359" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="429403" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-queryparser\ivy-7.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queryparser/7.7.3/lucene-queryparser-7.7.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="7.7.3" rev-constraint-default="7.7.3" rev-constraint-dynamic="7.7.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="lucene-queryparser" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="387763" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-queryparser\srcs\lucene-queryparser-7.7.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queryparser/7.7.3/lucene-queryparser-7.7.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-sandbox">
+			<revision name="7.7.3" status="release" pubdate="20200424180835" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="91">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="428776" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-sandbox\ivy-7.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-sandbox/7.7.3/lucene-sandbox-7.7.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="7.7.3" rev-constraint-default="7.7.3" rev-constraint-dynamic="7.7.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="lucene-sandbox" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="171446" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-sandbox\srcs\lucene-sandbox-7.7.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-sandbox/7.7.3/lucene-sandbox-7.7.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-join">
+			<revision name="7.7.3" status="release" pubdate="20200424180618" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="63">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="428771" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-join\ivy-7.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-join/7.7.3/lucene-join-7.7.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="7.7.3" rev-constraint-default="7.7.3" rev-constraint-dynamic="7.7.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="lucene-join" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="64825" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-join\srcs\lucene-join-7.7.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-join/7.7.3/lucene-join-7.7.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-grouping">
+			<revision name="7.7.3" status="release" pubdate="20200424180333" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="78">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="429064" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-grouping\ivy-7.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-grouping/7.7.3/lucene-grouping-7.7.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="7.7.3" rev-constraint-default="7.7.3" rev-constraint-dynamic="7.7.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="lucene-grouping" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="58384" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-grouping\srcs\lucene-grouping-7.7.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-grouping/7.7.3/lucene-grouping-7.7.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-queries">
+			<revision name="7.7.3" status="release" pubdate="20200424175635" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="429811" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-queries\ivy-7.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queries/7.7.3/lucene-queries-7.7.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="7.7.3" rev-constraint-default="7.7.3" rev-constraint-dynamic="7.7.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="lucene-queries" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="152636" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-queries\srcs\lucene-queries-7.7.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queries/7.7.3/lucene-queries-7.7.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-backward-codecs">
+			<revision name="7.7.3" status="release" pubdate="20200424175903" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="100">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="428871" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-backward-codecs\ivy-7.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-backward-codecs/7.7.3/lucene-backward-codecs-7.7.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="7.7.3" rev-constraint-default="7.7.3" rev-constraint-dynamic="7.7.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="lucene-backward-codecs" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="60357" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-backward-codecs\srcs\lucene-backward-codecs-7.7.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-backward-codecs/7.7.3/lucene-backward-codecs-7.7.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-analyzers-common">
+			<revision name="7.7.3" status="release" pubdate="20200424180908" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="90">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="428860" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-analyzers-common\ivy-7.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/7.7.3/lucene-analyzers-common-7.7.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="7.7.3" rev-constraint-default="7.7.3" rev-constraint-dynamic="7.7.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="lucene-analyzers-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1652842" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-analyzers-common\srcs\lucene-analyzers-common-7.7.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/7.7.3/lucene-analyzers-common-7.7.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-core">
+			<revision name="7.7.3" status="release" pubdate="20200424180426" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="428396" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-core\ivy-7.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-core/7.7.3/lucene-core-7.7.3.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="7.7.3" rev-constraint-default="7.7.3" rev-constraint-dynamic="7.7.3" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="lucene-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2123562" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.lucene\lucene-core\srcs\lucene-core-7.7.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-core/7.7.3/lucene-core-7.7.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.elasticsearch" name="elasticsearch-secure-sm">
+			<revision name="6.8.20" status="release" pubdate="20211011225434" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/elastic/elasticsearch" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="68">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2594" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch\elasticsearch-secure-sm\ivy-6.8.20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/elasticsearch/elasticsearch-secure-sm/6.8.20/elasticsearch-secure-sm-6.8.20.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="6.8.20" rev-constraint-default="6.8.20" rev-constraint-dynamic="6.8.20" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="elasticsearch-secure-sm" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10706" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch\elasticsearch-secure-sm\srcs\elasticsearch-secure-sm-6.8.20-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/elasticsearch/elasticsearch-secure-sm/6.8.20/elasticsearch-secure-sm-6.8.20-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpclient">
+			<revision name="4.5.2" status="release" pubdate="20160221213550" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="9890" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.httpcomponents\httpclient\ivy-4.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="4.5.2" rev-constraint-default="4.5.2" rev-constraint-dynamic="4.5.2" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="httpclient" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="707899" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.httpcomponents\httpclient\srcs\httpclient-4.5.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-hadoop-fs">
+			<revision name="1.17.0" status="release" pubdate="20230317150726" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="63471" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-hadoop-fs\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-hadoop-fs/1.17.0/flink-hadoop-fs-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-hadoop-fs" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="38952" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-hadoop-fs\srcs\flink-hadoop-fs-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-hadoop-fs/1.17.0/flink-hadoop-fs-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-core">
+			<revision name="1.17.0" status="release" pubdate="20230317150403" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="57293" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-core\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-core/1.17.0/flink-core-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1557290" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-core\srcs\flink-core-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-core/1.17.0/flink-core-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.esotericsoftware.kryo" name="kryo">
+			<revision name="2.24.0" status="release" pubdate="20140504183438" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/EsotericSoftware/kryo" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="108">
+				<license name="New BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="3540" time="0" location="C:\Users\impra\.ivy2\cache\com.esotericsoftware.kryo\kryo\ivy-2.24.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.24.0/kryo-2.24.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="2.24.0" rev-constraint-default="2.24.0" rev-constraint-dynamic="2.24.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="kryo" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="126718" time="0" location="C:\Users\impra\.ivy2\cache\com.esotericsoftware.kryo\kryo\srcs\kryo-2.24.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.24.0/kryo-2.24.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.objenesis" name="objenesis">
+			<revision name="2.1" status="release" pubdate="20131011025537" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://objenesis.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="94">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3377" time="0" location="C:\Users\impra\.ivy2\cache\org.objenesis\objenesis\ivy-2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="objenesis" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="44014" time="0" location="C:\Users\impra\.ivy2\cache\org.objenesis\objenesis\srcs\objenesis-2.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.esotericsoftware.minlog" name="minlog">
+			<revision name="1.2" status="release" pubdate="20120531175649" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/minlog/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="109">
+				<license name="New BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2697" time="0" location="C:\Users\impra\.ivy2\cache\com.esotericsoftware.minlog\minlog\ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="minlog" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2458" time="0" location="C:\Users\impra\.ivy2\cache\com.esotericsoftware.minlog\minlog\srcs\minlog-1.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-text">
+			<revision name="1.10.0" status="release" pubdate="20220924202711" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://commons.apache.org/proper/commons-text" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="22970" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.commons\commons-text\ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="commons-text" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="266055" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.commons\commons-text\srcs\commons-text-1.10.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-io" name="commons-io">
+			<revision name="2.11.0" status="release" pubdate="20210710071300" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://commons.apache.org/proper/commons-io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="20927" time="0" location="C:\Users\impra\.ivy2\cache\commons-io\commons-io\ivy-2.11.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="commons-io" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="398939" time="0" location="C:\Users\impra\.ivy2\cache\commons-io\commons-io\srcs\commons-io-2.11.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-lang3">
+			<revision name="3.12.0" status="release" pubdate="20210227021052" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="20767" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.commons\commons-lang3\ivy-3.12.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="3.12.0" rev-constraint-default="3.12.0" rev-constraint-dynamic="3.12.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="commons-lang3" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="651724" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.commons\commons-lang3\srcs\commons-lang3-3.12.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.findbugs" name="jsr305">
+			<revision name="3.0.2" status="release" pubdate="20170331102548" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3301" time="0" location="C:\Users\impra\.ivy2\cache\com.google.code.findbugs\jsr305\ivy-3.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="3.0.2" rev-constraint-default="3.0.2" rev-constraint-dynamic="3.0.2" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="jsr305" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="18102" time="0" location="C:\Users\impra\.ivy2\cache\com.google.code.findbugs\jsr305\srcs\jsr305-3.0.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-metrics-core">
+			<revision name="1.17.0" status="release" pubdate="20230317150310" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="69">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="61413" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-metrics-core\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-metrics-core/1.17.0/flink-metrics-core-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-metrics-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="38268" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-metrics-core\srcs\flink-metrics-core-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-metrics-core/1.17.0/flink-metrics-core-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-annotations">
+			<revision name="1.17.0" status="release" pubdate="20230317150219" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="93">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="54828" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-annotations\ivy-1.17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-annotations/1.17.0/flink-annotations-1.17.0.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17.0" rev-constraint-default="1.17.0" rev-constraint-dynamic="1.17.0" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="flink-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="17368" time="0" location="C:\Users\impra\.ivy2\cache\org.apache.flink\flink-annotations\srcs\flink-annotations-1.17.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-annotations/1.17.0/flink-annotations-1.17.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.36" status="release" pubdate="20220208190351" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="64">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5637" time="0" location="C:\Users\impra\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.36.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.7.36" rev-constraint-default="1.7.36" rev-constraint-dynamic="1.7.36" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="57747" time="0" location="C:\Users\impra\.ivy2\cache\org.slf4j\slf4j-api\srcs\slf4j-api-1.7.36-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-collections" name="commons-collections">
+			<revision name="3.2.2" status="release" pubdate="20151113044126" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/collections/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11218" time="0" location="C:\Users\impra\.ivy2\cache\commons-collections\commons-collections\ivy-3.2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="commons-collections" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="646075" time="0" location="C:\Users\impra\.ivy2\cache\commons-collections\commons-collections\srcs\commons-collections-3.2.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.elasticsearch" name="elasticsearch-x-content">
+			<revision name="6.8.20" status="release" pubdate="20211011225435" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/elastic/elasticsearch" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4116" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch\elasticsearch-x-content\ivy-6.8.20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/elasticsearch/elasticsearch-x-content/6.8.20/elasticsearch-x-content-6.8.20.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="6.8.20" rev-constraint-default="6.8.20" rev-constraint-dynamic="6.8.20" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="elasticsearch-x-content" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="78610" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch\elasticsearch-x-content\srcs\elasticsearch-x-content-6.8.20-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/elasticsearch/elasticsearch-x-content/6.8.20/elasticsearch-x-content-6.8.20-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.dataformat" name="jackson-dataformat-cbor">
+			<revision name="2.8.11" status="release" pubdate="20171224084807" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson-dataformats-binary" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="104">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="9742" time="0" location="C:\Users\impra\.ivy2\cache\com.fasterxml.jackson.dataformat\jackson-dataformat-cbor\ivy-2.8.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.8.11/jackson-dataformat-cbor-2.8.11.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="2.8.11" rev-constraint-default="2.8.11" rev-constraint-dynamic="2.8.11" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="jackson-dataformat-cbor" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="41064" time="0" location="C:\Users\impra\.ivy2\cache\com.fasterxml.jackson.dataformat\jackson-dataformat-cbor\srcs\jackson-dataformat-cbor-2.8.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.8.11/jackson-dataformat-cbor-2.8.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.dataformat" name="jackson-dataformat-yaml">
+			<revision name="2.8.11" status="release" pubdate="20171224085338" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8936" time="0" location="C:\Users\impra\.ivy2\cache\com.fasterxml.jackson.dataformat\jackson-dataformat-yaml\ivy-2.8.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.8.11/jackson-dataformat-yaml-2.8.11.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="2.8.11" rev-constraint-default="2.8.11" rev-constraint-dynamic="2.8.11" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="jackson-dataformat-yaml" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="30604" time="0" location="C:\Users\impra\.ivy2\cache\com.fasterxml.jackson.dataformat\jackson-dataformat-yaml\srcs\jackson-dataformat-yaml-2.8.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.8.11/jackson-dataformat-yaml-2.8.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.dataformat" name="jackson-dataformat-smile">
+			<revision name="2.8.11" status="release" pubdate="20171224084825" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson-dataformats-binary" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="105">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="9692" time="0" location="C:\Users\impra\.ivy2\cache\com.fasterxml.jackson.dataformat\jackson-dataformat-smile\ivy-2.8.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-smile/2.8.11/jackson-dataformat-smile-2.8.11.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="2.8.11" rev-constraint-default="2.8.11" rev-constraint-dynamic="2.8.11" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="jackson-dataformat-smile" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="70019" time="0" location="C:\Users\impra\.ivy2\cache\com.fasterxml.jackson.dataformat\jackson-dataformat-smile\srcs\jackson-dataformat-smile-2.8.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-smile/2.8.11/jackson-dataformat-smile-2.8.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.yaml" name="snakeyaml">
+			<revision name="1.17" status="release" pubdate="20160219184344" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.snakeyaml.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="102">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3997" time="0" location="C:\Users\impra\.ivy2\cache\org.yaml\snakeyaml\ivy-1.17.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.17/snakeyaml-1.17.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="1.17" rev-constraint-default="1.17" rev-constraint-dynamic="1.17" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="snakeyaml" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="171312" time="0" location="C:\Users\impra\.ivy2\cache\org.yaml\snakeyaml\srcs\snakeyaml-1.17-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.17/snakeyaml-1.17-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.elasticsearch" name="elasticsearch-core">
+			<revision name="6.8.20" status="release" pubdate="20211011225434" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/elastic/elasticsearch" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="74">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2579" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch\elasticsearch-core\ivy-6.8.20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/elasticsearch/elasticsearch-core/6.8.20/elasticsearch-core-6.8.20.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="6.8.20" rev-constraint-default="6.8.20" rev-constraint-dynamic="6.8.20" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="elasticsearch-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="30254" time="0" location="C:\Users\impra\.ivy2\cache\org.elasticsearch\elasticsearch-core\srcs\elasticsearch-core-6.8.20-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/elasticsearch/elasticsearch-core/6.8.20/elasticsearch-core-6.8.20-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.janino" name="janino">
+			<revision name="3.0.11" status="release" pubdate="20181113174341" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="0">
+				<license name="New BSD License" url="https://raw.githubusercontent.com/janino-compiler/janino/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="4217" time="0" location="C:\Users\impra\.ivy2\cache\org.codehaus.janino\janino\ivy-3.0.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/janino/janino/3.0.11/janino-3.0.11.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="3.0.11" rev-constraint-default="3.0.11" rev-constraint-dynamic="3.0.11" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="janino" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="402549" time="0" location="C:\Users\impra\.ivy2\cache\org.codehaus.janino\janino\srcs\janino-3.0.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/janino/janino/3.0.11/janino-3.0.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.janino" name="commons-compiler">
+			<revision name="3.0.11" status="release" pubdate="20181113174412" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="New BSD License" url="https://raw.githubusercontent.com/janino-compiler/janino/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3778" time="0" location="C:\Users\impra\.ivy2\cache\org.codehaus.janino\commons-compiler\ivy-3.0.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/janino/commons-compiler/3.0.11/commons-compiler-3.0.11.pom"/>
+				<caller organisation="transactions-producer" name="transactions-producer$sources" conf="compile, runtime-internal, runtime, optional" rev="3.0.11" rev-constraint-default="3.0.11" rev-constraint-dynamic="3.0.11" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="commons-compiler" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="56475" time="0" location="C:\Users\impra\.ivy2\cache\org.codehaus.janino\commons-compiler\srcs\commons-compiler-3.0.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/janino/commons-compiler/3.0.11/commons-compiler-3.0.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
