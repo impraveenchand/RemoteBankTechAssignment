@@ -30,7 +30,7 @@ class TransactionsAggregationJob(
     println("The aggregation events with output topic schema --->")
     result.print()
 
-//    result.addSink(aggregationSink)
+    result.addSink(aggregationSink)
     result.addSink(elasticSearchSink)
 
   }
